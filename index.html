@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>let's JET</title>
-</head>
-<body>
-    <div class="container">
-        <section class="top">
-            <div class="topImage"></div>
-            <nav>
-                <div class="navDiv"><a href="#quote">Get a Quote</a></div>
-                <div class="navDiv"><a href="#services">Our Services</a></div>
-                <div class="navDiv"><a href="#about">About Us</a></div>
-                <div class="navDiv"><a href="#">Home</a></div>
-            </nav>
-        </section>
-        <section class="middle">
-            <div id="services">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="img/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="img/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="img/favicon_io/favicon-16x16.png"
+		/>
+		<title>let's JET</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="top">
+				<div class="topImage"></div>
+				<nav>
+					<div class="navDiv"><a href="#quote">Get a Quote</a></div>
+					<div class="navDiv"><a href="#services">Our Services</a></div>
+					<div class="navDiv"><a href="#about">About Us</a></div>
+					<div class="navDiv"><a href="#">Home</a></div>
+				</nav>
+			</section>
+			<section class="middle">
+				<div id="services"></div>
+				<div id="about"></div>
+				<div id="quote"></div>
+			</section>
+			<section class="bottom">
+				<div id="contact">
+					<h2>Contact Me</h2>
+					<p>Any questions? Send me a message.</p>
+				</div>
 
-            </div>
-            <div id="about">
-
-            </div>
-            <div id="quote">
-
-            </div>
-        </section>
-        <section class="bottom">
-            <div id="contact"></div>
-            <footer></footer>
-        </section>
-    </div>
-</body>
+				<div>
+					<form action="POST" data-netlify="true">
+						<div class="fields">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input
+									type="email"
+									name="email"
+									id="email"
+									placeholder="Email"
+								/>
+							</div>
+							<div class="field">
+								<textarea
+									name="message"
+									id="message"
+									placeholder="Message"
+									rows="7"
+								></textarea>
+							</div>
+						</div>
+						<div class="text-center">
+							<div id="captcha" data-netlify-recaptcha="true"></div>
+						</div>
+						<div class="text-center">
+							<input
+								type="submit"
+								value="Send Message"
+								class="button button-dark text-center"
+							/>
+						</div>
+					</form>
+				</div>
+				<footer>
+					let's JET &copy;
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script>
+				</footer>
+			</section>
+		</div>
+	</body>
 </html>
