@@ -24,6 +24,12 @@
     height: 600px;
 }
 
+.companyName {
+    padding: 20px 0 100px;
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
 nav {
     width: 100%;
     text-align: center;
@@ -77,8 +83,7 @@ nav {
 }
 
 #courier {
-    grid-column-start: 3;
-    grid-column: span 2;
+    grid-column: 2 / span 2;
 }
 
 .aboutTitle {
@@ -159,12 +164,22 @@ textarea {
 
 footer {
     margin-top: 25px;
-    padding: 25px 0;
+    padding: 30px;
     background-color: #6B6C6C;
     font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 footer span {
     color: #e3e3e3;
+}
+
+#rightFoot {
+    text-align: right;
+}
+
+#rightFoot a {
+    float: right;
 }
 
